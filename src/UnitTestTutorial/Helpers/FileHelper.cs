@@ -10,7 +10,7 @@ namespace UnitTestTutorial.Helpers
             var files = Directory.GetFiles(source);
             foreach (var file in files)
             {
-                File.Copy(source,destination);
+                File.Copy(Path.Combine(source,Path.GetFileName(file)),destination);
             }
         }
     }
