@@ -9,6 +9,10 @@ namespace UnitTestTutorial.Helpers
     {
         public decimal GetDiscount(User user, decimal price)
         {
+            if(price<0)
+            {
+                throw new ArgumentException($"Price cannot be less than zero");
+            }
             switch(user.UserType)
             {
                 case (int)UserTypeEnum.RegularUser:

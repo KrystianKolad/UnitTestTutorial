@@ -2,12 +2,12 @@ namespace UnitTestTutorial.Helpers.Interfaces
 {
     public interface ICalculateHelper
     {
-         double Add(int x, int y);
+         double Add(double x, double y);
 
-         double Subtract(int x, int y);
+         double Subtract(double x, double y);
 
-         double Multiply(int x, int y);
+         double Multiply(double x, double y);
 
-         double Divide(int x, int y;)
+         double Divide(double x, double y);
     }
 }
